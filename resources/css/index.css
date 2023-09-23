@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Proza+Libre:wght@700&display=swap");
 html {
     scroll-behavior: smooth;
 }
@@ -52,8 +53,39 @@ nav {
     height: 1px;
     background-color: lightsteelblue;
 }
+
 .portrait {
     width: 300px;
     border-radius: var(--border-radius);
     flex-shrink: 0;
+}
+
+.about-me-container {
+    display: flex;
+}
+
+.about-me-text-container {
+    margin-right: var(--spacing-3);
+}
+
+.project-image {
+    width: 50%;
+}
+
+
+#logo {
+    margin: 0;
+  }
+  
+  #skills-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  #skills-container > * {
+    font-size: 2em;
+    width: 2em;
+    margin-top: var(--spacing-1);
   }

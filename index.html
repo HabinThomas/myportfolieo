@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Habin Varghese Thomas</title>
   <link rel="stylesheet" href="./resources/css/index.css" />
+  <link rel="stylesheet" href="./resources/css/skill.css" />
 </head>
 
 <body>
@@ -43,7 +44,26 @@
         </div>
       </div>
     </section>
-
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div id="skills-container">
+        <i class="fab fa-html5"></i>
+        <i class="fab fa-css3-alt"></i>
+        <i class="fab fa-js"></i>
+        <i class="fab fa-react"></i>
+        <i class="fab fa-aws"></i>
+        <i class="fab fa-sketch"></i>
+        <i class="fab fa-figma"></i>
+        <i class="fab fa-git"></i>
+        <i class="fab fa-chrome"></i>
+        <i class="fas fa-terminal"></i>
+        <i class="fas fa-universal-access"></i>
+        <i class="fab fa-npm"></i>
+        <i class="fab fa-node"></i>
+        <i class="fab fa-github"></i>
+      </div>
+    </section>
 
 
 
@@ -53,6 +73,22 @@
 
 
 </body>
+
+ <script>
+    const timeContainer = document.getElementById("time-container");
+    const BIRTH_DAY = "27-02-1995";
+    const BIRTH_DAY_DATE = new Date(BIRTH_DAY);
+    const intlNumberFormatter = new Intl.NumberFormat("en-US");
+
+    setInterval(() => {
+      const now = new Date();
+      const difference = Math.floor(
+        (now.getTime() - BIRTH_DAY_DATE.getTime()) / 1000
+      );
+
+      timeContainer.innerText = intlNumberFormatter.format(difference);
+    }, 1000);
+  </script>
 
 
 </html>
